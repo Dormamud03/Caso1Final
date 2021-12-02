@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Caso1Final</string>
+    <string name="StrUsername" />
+    <string name="StrPassword">Password</string>
+    <string name="StrUsernames">Username</string>
+    <string name="StrCedula">Cedula</string>
+    <string name="StrNombre">Nombre</string>
+    <string name="StrContraseña">Contraseña</string>
+    <string name="StrRepetirContraseña">Repetir Contraseña</string>
+    <string name="StrCelular">Celular</string>
+    <string name="StrDireccion">Direccion</string>
+</resources>
