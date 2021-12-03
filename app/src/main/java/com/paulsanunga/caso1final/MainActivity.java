@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponse(Call<Client> call, Response<Client> response) {
                         if (response.body()!=null){
                             client = response.body();
-                            System.out.println(client.getCedulaClient());
                             Toast.makeText(MainActivity.this, "Se Loggeo Correctamente",Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MainActivity.this,PerfilActivity.class);
                             startActivity(intent);
