@@ -7,12 +7,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="363dp"
-        android:layout_height="274dp"
+        android:layout_width="317dp"
+        android:layout_height="202dp"
         android:layout_marginStart="79dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="79dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/starmotors" />
@@ -60,13 +61,14 @@
 
     <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="153dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="68dp"
         android:ems="10"
         android:inputType="date"
         android:text="Date"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="292dp" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -78,4 +80,14 @@
         android:text="Descripcion"
         tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="368dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLICITUD DE GARANTIA"
+        android:textColor="#000000"
+        android:textSize="25"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="25dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
