@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15185185185185185" />
+        <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/drawable-v24/round_button.xml" value="0.15185185185185185" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/drawable-v24/round_buttonceleste.xml" value="0.1" />
+        <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/drawable-v24/round_buttonverde.xml" value="0.15185185185185185" />
+        <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15185185185185185" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/drawable/round_button.xml" value="0.15462962962962962" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/drawable/round_buttonverde.xml" value="0.1" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/activity_catalogo.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/activity_mis_vehiculos.xml" value="0.22" />
+        <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/activity_perfil.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/activity_perfil_de_usuario.xml" value="0.25" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/detalle_vehiculo.xml" value="0.25" />
-        <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/perfil_user.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/perfil_user.xml" value="0.22" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/register.xml" value="0.22" />
         <entry key="..\:/Users/JhorusF/Desktop/Proyectos/Caso1Final/app/src/main/res/layout/solicitud_garantia.xml" value="0.25" />
       </map>

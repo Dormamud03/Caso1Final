@@ -28,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
         EditText txtCedula = (EditText) findViewById(R.id.editTextCedula);
         EditText txtNombre = (EditText) findViewById(R.id.editTextNombre);
         EditText txtContrasenia = (EditText) findViewById(R.id.editTextContrasenia);
-        EditText txtEmail = (EditText) findViewById(R.id.editTextEmail);
+        EditText txtEmail = (EditText) findViewById(R.id.editTextEmailEdit);
         EditText txtCelular = (EditText) findViewById(R.id.editTextCelular);
         EditText txtDireccion = (EditText) findViewById(R.id.editTextDireccion);
 
@@ -60,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onResponse(Call<Client> call, Response<Client> response) {
                 if (response!=null){
                     Toast.makeText(RegisterActivity.this, "Se Agrego con exito",Toast.LENGTH_LONG).show();
-
+                    System.out.println(response.body());
                 }
             }
 
