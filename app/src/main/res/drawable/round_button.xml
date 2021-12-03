@@ -21,6 +21,5 @@
         />
     <stroke
         android:width="3dp"
-        android:color="#db265a"
-        />
+        android:color="#ffff" />
 </shape>
