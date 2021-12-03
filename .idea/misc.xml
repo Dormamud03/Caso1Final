@@ -17,7 +17,7 @@
         <entry key="app/src/main/res/drawable/round_buttonverde.xml" value="0.134375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15364583333333334" />
         <entry key="app/src/main/res/layout/activity_perfil_de_usuario.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/detalle_vehiculo.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/detalle_vehiculo.xml" value="0.5" />
         <entry key="app/src/main/res/layout/register.xml" value="0.18" />
       </map>
     </option>
