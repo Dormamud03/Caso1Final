@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="405dp"
+        android:layout_height="39dp"
+        android:text="Modelo"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="408dp"
+        android:layout_height="49dp"
+        android:text="Datos Personales"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="419dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre:"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="408dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Correo electronico"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="407dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Escribir modelo"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Descripcion"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="281dp"
+        android:layout_height="99dp"
+        app:srcCompat="@drawable/starmotors"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="413dp"
+        android:layout_height="40dp"
+        android:text="SOLICITUD DE COTIZACION"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="153dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#F81F1F"
+        android:text="SOLICITAR"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textColorHighlight="#DA0F0F"
+        android:textColorLink="#D81111"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
