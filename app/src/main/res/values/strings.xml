@@ -9,4 +9,5 @@
     <string name="StrRepetirContraseña">Repetir Contraseña</string>
     <string name="StrCelular">Celular</string>
     <string name="StrDireccion">Direccion</string>
+    <string name="StrFecha">Fecha</string>
 </resources>
