@@ -118,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextcelularper" />
 
     <Button
-        android:id="@+id/idCotizarbtn"
+        android:id="@+id/btnCotizarVehiculo"
         android:layout_width="240dp"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
@@ -146,7 +146,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idCotizarbtn"
+        app:layout_constraintTop_toBottomOf="@+id/btnCotizarVehiculo"
         android:background = "@drawable/round_button"/>
 
     <Button

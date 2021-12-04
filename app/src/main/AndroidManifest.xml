@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Caso1Final">
-        <activity android:name=".perfil_de_usuario"></activity>
+        <activity android:name=".PerfilUsuario"></activity>
+        <activity android:name=".CatalogoVehiculo"></activity>
+        <activity android:name=".CambiarContraseña"></activity>
+        <activity android:name=".CotizacionVehiculo"></activity>
+        <activity android:name=".DetalleVehiculo"></activity>
+        <activity android:name=".MisVehiculos"></activity>
+        <activity android:name=".RegisterClient"></activity>
+        <activity android:name=".SolicitarGarantia"></activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

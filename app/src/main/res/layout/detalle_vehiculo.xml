@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.025" />
 
     <Button
-        android:id="@+id/idCotizarbtn"
+        android:id="@+id/btnCotizarVehiculo"
         android:layout_width="240dp"
         android:layout_height="60dp"
         android:layout_marginBottom="4dp"
@@ -166,18 +166,6 @@
         app:layout_constraintVertical_bias="0.797" />
 
     <ImageView
-        android:id="@+id/regresarbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.615"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
-
-    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -202,6 +190,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/star_big_off" />
+
+    <Button
+        android:id="@+id/regresarbtn"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

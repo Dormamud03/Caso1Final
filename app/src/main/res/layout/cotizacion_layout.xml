@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+    <Button
+        android:id="@+id/regresarbtnCotizacion"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:background="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="405dp"

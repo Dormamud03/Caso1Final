@@ -1,31 +1,31 @@
 package com.paulsanunga.caso1final;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class DetalleVehiculo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.detalle_vehiculo);
 
-        Button btnIngresar = findViewById(R.id.btnIngresar);
-        Button btnRegistrarse = findViewById(R.id.btnRegistrarse);
+        Button regresarbtn = findViewById(R.id.regresarbtn);
+        Button cotizar = findViewById(R.id.btnCotizarVehiculo);
 
-        btnRegistrarse.setOnClickListener(new View.OnClickListener() {
+        cotizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),RegisterClient.class);
+                Intent intent = new Intent(getApplicationContext(),CotizacionVehiculo.class);
                 startActivity(intent);
             }
         });
 
-        btnIngresar.setOnClickListener(new View.OnClickListener() {
+        regresarbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),CatalogoVehiculo.class);
