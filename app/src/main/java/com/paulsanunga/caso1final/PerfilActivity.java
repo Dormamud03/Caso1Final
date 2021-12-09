@@ -2,6 +2,7 @@ package com.paulsanunga.caso1final;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,6 +32,8 @@ public class PerfilActivity extends AppCompatActivity {
         EditText celularPerfil = findViewById(R.id.editTextcelularper);
         EditText direccionPerfil = findViewById(R.id.editTextdireccionper);
         Button actualizarDatos = findViewById(R.id.btnActualizarDatos);
+        Button cambiarContrania = findViewById(R.id.idCotizarbtn);
+
 
         cedulaPerfil.setText(clientEdit.getCedulaClient());
         nombrePerfil.setText(clientEdit.getNombresClient());
@@ -57,6 +60,14 @@ public class PerfilActivity extends AppCompatActivity {
                 }
 
 
+            }
+        });
+
+        cambiarContrania.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PerfilActivity.this,CambiarContrasenia.class);
+                startActivity(intent);
             }
         });
 
