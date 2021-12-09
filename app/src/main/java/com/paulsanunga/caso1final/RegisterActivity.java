@@ -1,5 +1,6 @@
 package com.paulsanunga.caso1final;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -47,6 +48,8 @@ public class RegisterActivity extends AppCompatActivity {
                 p.setPasswordClient(txtContrasenia.getText().toString());
 
                 addCliente(p);
+                Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
+                startActivity(intent);
 
             }
         });
