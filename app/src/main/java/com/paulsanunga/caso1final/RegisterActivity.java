@@ -63,7 +63,6 @@ public class RegisterActivity extends AppCompatActivity {
             public void onResponse(Call<Client> call, Response<Client> response) {
                 if (response!=null){
                     Toast.makeText(RegisterActivity.this, "Se Agrego con exito",Toast.LENGTH_LONG).show();
-                    System.out.println(response.body());
                 }
             }
 

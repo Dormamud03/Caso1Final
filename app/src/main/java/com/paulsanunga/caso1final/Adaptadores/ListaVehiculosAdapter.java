@@ -31,12 +31,12 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     @Override
     public void onBindViewHolder(@NonNull VehiculoViewHolder holder, int position) {
-        holder.viewMarca.setText(listVehiculos.get(position).getMarca);
+        /*holder.viewMarca.setText(listVehiculos.get(position).getMarca);
         holder.viewAnioFabri.setText(listVehiculos.get(position).getAnioFabri);
         holder.viewModelo.setText(listVehiculos.get(position).getModelo);
         holder.viewColor.setText(listVehiculos.get(position).getColor);
         holder.viewMotor.setText(listVehiculos.get(position).getMotor);
-        holder.viewNumeroPuertas.setText(listVehiculos.get(position).getNumeroPuertas);
+        holder.viewNumeroPuertas.setText(listVehiculos.get(position).getNumeroPuertas);*/
 
 
 

@@ -36,13 +36,18 @@ public class CambiarContrasenia extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (clientEditContrasenia.getPasswordClient().equals(contraseniaAntigua.getText().toString())){
-                    if (contraseniaNueva.getText().toString().equals(contraseniaNuevaRepetida.getText().toString())){
-                        clientEditContrasenia.setPasswordClient(contraseniaNueva.getText().toString());
-                        editClient(clientEditContrasenia);
-                        Toast.makeText(CambiarContrasenia.this, "Se edito Correctamente",Toast.LENGTH_LONG).show();
-                    }else{
-                        Toast.makeText(CambiarContrasenia.this, "No coinciden las contraseñas",Toast.LENGTH_LONG).show();
+                    if (contraseniaNueva.getText().toString().isEmpty() && contraseniaNuevaRepetida.getText().toString().isEmpty()){
+                        Toast.makeText(CambiarContrasenia.this, "No ha ingresado ninguna contraseña",Toast.LENGTH_LONG).show();
+                    }else {
+                        if (contraseniaNueva.getText().toString().equals(contraseniaNuevaRepetida.getText().toString())){
+                            clientEditContrasenia.setPasswordClient(contraseniaNueva.getText().toString());
+                            editClient(clientEditContrasenia);
+                            Toast.makeText(CambiarContrasenia.this, "Se edito Correctamente",Toast.LENGTH_LONG).show();
+                        }else{
+                            Toast.makeText(CambiarContrasenia.this, "No coinciden las contraseñas",Toast.LENGTH_LONG).show();
+                        }
                     }
+
                 }else{
                     Toast.makeText(CambiarContrasenia.this, "Esa contraseña es incorrecta",Toast.LENGTH_LONG).show();
                 }
