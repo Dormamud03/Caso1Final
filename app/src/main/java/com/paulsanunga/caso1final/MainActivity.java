@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         if (response.body()!=null){
                             client = response.body();
                             Toast.makeText(MainActivity.this, "Se Loggeo Correctamente",Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(MainActivity.this,PerfilActivity.class);
+                            Intent intent = new Intent(MainActivity.this,CatalogoVehiculo.class);
                             startActivity(intent);
                         }
                     }

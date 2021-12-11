@@ -12,12 +12,13 @@ import com.paulsanunga.caso1final.Model.CatalogoVehiculos;
 import com.paulsanunga.caso1final.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAdapter.VehiculoViewHolder> {
 
-    ArrayList<CatalogoVehiculos> listVehiculos;
+    List<CatalogoVehiculos> listVehiculos;
 
-    public ListaVehiculosAdapter(ArrayList<CatalogoVehiculos> listVehiculos) {
+    public ListaVehiculosAdapter(List<CatalogoVehiculos> listVehiculos) {
 
         this.listVehiculos = listVehiculos;
     }
@@ -25,18 +26,17 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
     @Override
     public VehiculoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_vehiculos,null,false);
-
         return new VehiculoViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull VehiculoViewHolder holder, int position) {
-        /*holder.viewMarca.setText(listVehiculos.get(position).getMarca);
-        holder.viewAnioFabri.setText(listVehiculos.get(position).getAnioFabri);
-        holder.viewModelo.setText(listVehiculos.get(position).getModelo);
-        holder.viewColor.setText(listVehiculos.get(position).getColor);
-        holder.viewMotor.setText(listVehiculos.get(position).getMotor);
-        holder.viewNumeroPuertas.setText(listVehiculos.get(position).getNumeroPuertas);*/
+        holder.viewMarca.setText(listVehiculos.get(position).getDiseno().getMarca());
+        holder.viewAnioFabri.setText(Integer.toString(listVehiculos.get(position).getYear_vehiculo()));
+        holder.viewModelo.setText(listVehiculos.get(position).getDiseno().getModelo());
+        //holder.viewColor.setText(listVehiculos.get(position).getCaracteristica().getc);
+        holder.viewMotor.setText(listVehiculos.get(position).getCaracteristica().getMotor());
+        holder.viewNumeroPuertas.setText(Integer.toString(listVehiculos.get(position).getCaracteristica().getNumero_de_puertas()));
 
 
 
@@ -44,6 +44,9 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     @Override
     public int getItemCount() {
+        if (listVehiculos==null){
+            return 0;
+        }
         return listVehiculos.size();
     }
 
@@ -54,7 +57,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
             viewMarca = itemView.findViewById(R.id.txtVehiculoMarca);
             viewAnioFabri = itemView.findViewById(R.id.txtVehiculoAnioFabric);
             viewModelo = itemView.findViewById(R.id.txtVehiculoModelo);
-            viewColor = itemView.findViewById(R.id.txtVehiculoColor);
+            //viewColor = itemView.findViewById(R.id.txtVehiculoColor);
             viewMotor = itemView.findViewById(R.id.txtVehiculoMotor);
             viewNumeroPuertas = itemView.findViewById(R.id.txtVehiculoNumeroPuertas);
         }

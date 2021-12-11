@@ -2,51 +2,51 @@ package com.paulsanunga.caso1final.Model;
 
 public class CaracteristicaVehiculo {
 
-    private Long idCaracteristica;
-    private String eguridad;
+    private long id_caracteristica;
+    private String seguridad;
     private String tecnologia;
     private int velocidades;
     private String interior;
     private String rines;
     private int cilindros;
     private String direccion;
-    private String capacidadCarga;
+    private String capacidad_carga;
     private String vidrios;
-    private int numeroDePuertas;
+    private int numero_de_puertas;
     private String motor;
 
-    public CaracteristicaVehiculo(Long idCaracteristica, String eguridad, String tecnologia, int velocidades, String interior, String rines, int cilindros, String direccion, String capacidadCarga, String vidrios, int numeroDePuertas, String motor) {
-        this.idCaracteristica = idCaracteristica;
-        this.eguridad = eguridad;
+    public CaracteristicaVehiculo(long id_caracteristica, String seguridad, String tecnologia, int velocidades, String interior, String rines, int cilindros, String direccion, String capacidad_carga, String vidrios, int numero_de_puertas, String motor) {
+        this.id_caracteristica = id_caracteristica;
+        this.seguridad = seguridad;
         this.tecnologia = tecnologia;
         this.velocidades = velocidades;
         this.interior = interior;
         this.rines = rines;
         this.cilindros = cilindros;
         this.direccion = direccion;
-        this.capacidadCarga = capacidadCarga;
+        this.capacidad_carga = capacidad_carga;
         this.vidrios = vidrios;
-        this.numeroDePuertas = numeroDePuertas;
+        this.numero_de_puertas = numero_de_puertas;
         this.motor = motor;
     }
 
     public CaracteristicaVehiculo() {
     }
 
-    public Long getIdCaracteristica() {
-        return idCaracteristica;
+    public long getId_caracteristica() {
+        return id_caracteristica;
     }
 
-    public void setIdCaracteristica(Long idCaracteristica) {
-        this.idCaracteristica = idCaracteristica;
+    public void setId_caracteristica(long id_caracteristica) {
+        this.id_caracteristica = id_caracteristica;
     }
 
-    public String getEguridad() {
-        return eguridad;
+    public String getSeguridad() {
+        return seguridad;
     }
 
-    public void setEguridad(String eguridad) {
-        this.eguridad = eguridad;
+    public void setSeguridad(String seguridad) {
+        this.seguridad = seguridad;
     }
 
     public String getTecnologia() {
@@ -97,12 +97,12 @@ public class CaracteristicaVehiculo {
         this.direccion = direccion;
     }
 
-    public String getCapacidadCarga() {
-        return capacidadCarga;
+    public String getCapacidad_carga() {
+        return capacidad_carga;
     }
 
-    public void setCapacidadCarga(String capacidadCarga) {
-        this.capacidadCarga = capacidadCarga;
+    public void setCapacidad_carga(String capacidad_carga) {
+        this.capacidad_carga = capacidad_carga;
     }
 
     public String getVidrios() {
@@ -113,12 +113,12 @@ public class CaracteristicaVehiculo {
         this.vidrios = vidrios;
     }
 
-    public int getNumeroDePuertas() {
-        return numeroDePuertas;
+    public int getNumero_de_puertas() {
+        return numero_de_puertas;
     }
 
-    public void setNumeroDePuertas(int numeroDePuertas) {
-        this.numeroDePuertas = numeroDePuertas;
+    public void setNumero_de_puertas(int numero_de_puertas) {
+        this.numero_de_puertas = numero_de_puertas;
     }
 
     public String getMotor() {

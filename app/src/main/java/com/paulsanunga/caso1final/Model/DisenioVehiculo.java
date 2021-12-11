@@ -2,25 +2,25 @@ package com.paulsanunga.caso1final.Model;
 
 public class DisenioVehiculo {
 
-    private Long idDiseno;
+    private long id_diseno;
     private String marca;
     private String modelo;
 
     public DisenioVehiculo() {
     }
 
-    public DisenioVehiculo(Long idDiseno, String marca, String modelo) {
-        this.idDiseno = idDiseno;
+    public DisenioVehiculo(long id_diseno, String marca, String modelo) {
+        this.id_diseno = id_diseno;
         this.marca = marca;
         this.modelo = modelo;
     }
 
-    public Long getIdDiseno() {
-        return idDiseno;
+    public long getId_diseno() {
+        return id_diseno;
     }
 
-    public void setIdDiseno(Long idDiseno) {
-        this.idDiseno = idDiseno;
+    public void setId_diseno(long id_diseno) {
+        this.id_diseno = id_diseno;
     }
 
     public String getMarca() {

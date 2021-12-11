@@ -2,53 +2,53 @@ package com.paulsanunga.caso1final.Model;
 
 public class CatalogoVehiculos {
 
-    private Long idVehiculoCatalogo;
-    private DisenioVehiculo disenioVehiculo;
-    private int yearVehiculo;
-    private CaracteristicaVehiculo caracteristicaVehiculo;
+    private long id_vehiculo_catalogo;
+    private DisenioVehiculo diseno;
+    private int year_vehiculo;
+    private CaracteristicaVehiculo caracteristica;
     private String links_imagen;
 
-    public CatalogoVehiculos(Long idVehiculoCatalogo, DisenioVehiculo disenioVehiculo, int yearVehiculo, CaracteristicaVehiculo caracteristicaVehiculo, String links_imagen) {
-        this.idVehiculoCatalogo = idVehiculoCatalogo;
-        this.disenioVehiculo = disenioVehiculo;
-        this.yearVehiculo = yearVehiculo;
-        this.caracteristicaVehiculo = caracteristicaVehiculo;
+    public CatalogoVehiculos(long id_vehiculo_catalogo, DisenioVehiculo diseno, int year_vehiculo, CaracteristicaVehiculo caracteristica, String links_imagen) {
+        this.id_vehiculo_catalogo = id_vehiculo_catalogo;
+        this.diseno = diseno;
+        this.year_vehiculo = year_vehiculo;
+        this.caracteristica = caracteristica;
         this.links_imagen = links_imagen;
     }
 
     public CatalogoVehiculos() {
     }
 
-    public Long getIdVehiculoCatalogo() {
-        return idVehiculoCatalogo;
+    public long getId_vehiculo_catalogo() {
+        return id_vehiculo_catalogo;
     }
 
-    public void setIdVehiculoCatalogo(Long idVehiculoCatalogo) {
-        this.idVehiculoCatalogo = idVehiculoCatalogo;
+    public void setId_vehiculo_catalogo(long id_vehiculo_catalogo) {
+        this.id_vehiculo_catalogo = id_vehiculo_catalogo;
     }
 
-    public DisenioVehiculo getDisenioVehiculo() {
-        return disenioVehiculo;
+    public DisenioVehiculo getDiseno() {
+        return diseno;
     }
 
-    public void setDisenioVehiculo(DisenioVehiculo disenioVehiculo) {
-        this.disenioVehiculo = disenioVehiculo;
+    public void setDiseno(DisenioVehiculo diseno) {
+        this.diseno = diseno;
     }
 
-    public int getYearVehiculo() {
-        return yearVehiculo;
+    public int getYear_vehiculo() {
+        return year_vehiculo;
     }
 
-    public void setYearVehiculo(int yearVehiculo) {
-        this.yearVehiculo = yearVehiculo;
+    public void setYear_vehiculo(int year_vehiculo) {
+        this.year_vehiculo = year_vehiculo;
     }
 
-    public CaracteristicaVehiculo getCaracteristicaVehiculo() {
-        return caracteristicaVehiculo;
+    public CaracteristicaVehiculo getCaracteristica() {
+        return caracteristica;
     }
 
-    public void setCaracteristicaVehiculo(CaracteristicaVehiculo caracteristicaVehiculo) {
-        this.caracteristicaVehiculo = caracteristicaVehiculo;
+    public void setCaracteristica(CaracteristicaVehiculo caracteristica) {
+        this.caracteristica = caracteristica;
     }
 
     public String getLinks_imagen() {
@@ -57,5 +57,16 @@ public class CatalogoVehiculos {
 
     public void setLinks_imagen(String links_imagen) {
         this.links_imagen = links_imagen;
+    }
+
+    @Override
+    public String toString() {
+        return "CatalogoVehiculos{" +
+                "id_vehiculo_catalogo=" + id_vehiculo_catalogo +
+                ", diseno=" + diseno +
+                ", year_vehiculo=" + year_vehiculo +
+                ", caracteristica=" + caracteristica +
+                ", links_imagen='" + links_imagen + '\'' +
+                '}';
     }
 }
