@@ -1,5 +1,6 @@
 package com.paulsanunga.caso1final.Adaptadores;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,7 +40,6 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
         holder.viewNumeroPuertas.setText(Integer.toString(listVehiculos.get(position).getCaracteristica().getNumero_de_puertas()));
 
 
-
     }
 
     @Override
@@ -60,6 +60,14 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
             //viewColor = itemView.findViewById(R.id.txtVehiculoColor);
             viewMotor = itemView.findViewById(R.id.txtVehiculoMotor);
             viewNumeroPuertas = itemView.findViewById(R.id.txtVehiculoNumeroPuertas);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Context context = v.getContext();
+
+                }
+            });
         }
     }
 }
