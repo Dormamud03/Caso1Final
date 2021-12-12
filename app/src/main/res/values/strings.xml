@@ -22,4 +22,5 @@
     <string name="StrContraseniaAn">Contraseña Antigua</string>
     <string name="StrContraseniaNueva">Contraseña Nueva</string>
     <string name="StrContraseniaRepetidaNueva">Repetir Contraseña Nueva</string>
+    <string name="catalogo_vehiculos">Catalogo Vehiculos</string>
 </resources>

@@ -128,4 +128,17 @@ public class CaracteristicaVehiculo {
     public void setMotor(String motor) {
         this.motor = motor;
     }
+
+    @Override
+    public String toString() {
+        return "El auto cuenta con las siguientes Caracteristicas: " +
+                "Seguridad: " + seguridad +", Tecnologia: " + tecnologia +
+                ", Velocidades " + velocidades +
+                ", Interior: " + interior + ", Rines: " + rines +
+                ", Cilindros: " + cilindros +", Direccion: " + direccion +
+                ", Capacidad Carga: " + capacidad_carga +
+                ", Vidrios: " + vidrios +
+                ", Numero de Puertas: " + numero_de_puertas +
+                ", Motor: " + motor;
+    }
 }

@@ -1,6 +1,7 @@
 package com.paulsanunga.caso1final.Adaptadores;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.paulsanunga.caso1final.DetalleVehiculo;
 import com.paulsanunga.caso1final.Model.CatalogoVehiculos;
 import com.paulsanunga.caso1final.R;
 
@@ -65,7 +67,11 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
                 @Override
                 public void onClick(View v) {
                     Context context = v.getContext();
-
+                    Intent intent = new Intent(context, DetalleVehiculo.class);
+                    intent.putExtra("marca", listVehiculos.get(getAdapterPosition()).getDiseno().getMarca());
+                    intent.putExtra("modelo", listVehiculos.get(getAdapterPosition()).getDiseno().getModelo());
+                    intent.putExtra("descripcion", listVehiculos.get(getAdapterPosition()).getCaracteristica().toString());
+                    context.startActivity(intent);
                 }
             });
         }
