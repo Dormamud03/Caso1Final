@@ -3,6 +3,7 @@ package com.paulsanunga.caso1final;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class DetalleVehiculo extends AppCompatActivity {
         TextView txtViewDescInd = findViewById(R.id.txtViewDescInd);
         Button btnBack = findViewById(R.id.regresarbtn);
 
+
         Bundle bn = getIntent().getExtras();
         String marca = bn.getString("marca");
         String modelo = bn.getString("modelo");
@@ -26,7 +28,12 @@ public class DetalleVehiculo extends AppCompatActivity {
         txtViewMarcaInd.setText(marca);
         txtViewModeloInd.setText(modelo);
         txtViewDescInd.setText(descripcion);
-
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
     }
 }

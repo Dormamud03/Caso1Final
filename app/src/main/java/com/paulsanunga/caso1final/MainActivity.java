@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Se Loggeo Correctamente",Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MainActivity.this,CatalogoVehiculo.class);
                             startActivity(intent);
+                            finish();
                         }
                     }
 

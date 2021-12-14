@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -37,6 +38,14 @@ public class CatalogoVehiculo extends AppCompatActivity {
         listVehiculos = findViewById(R.id.listVehiculos);
         mostrarCatalogoVehiculos();
         System.out.println("despues "+listArrayCatalogo);
+        Button btnPerfil = findViewById(R.id.btnPerfil);
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CatalogoVehiculo.this,PerfilActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

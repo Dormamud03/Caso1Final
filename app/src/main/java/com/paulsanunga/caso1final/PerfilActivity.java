@@ -32,7 +32,8 @@ public class PerfilActivity extends AppCompatActivity {
         EditText celularPerfil = findViewById(R.id.editTextcelularper);
         EditText direccionPerfil = findViewById(R.id.editTextdireccionper);
         Button actualizarDatos = findViewById(R.id.btnActualizarDatos);
-        Button cambiarContrania = findViewById(R.id.idCotizarbtn);
+        Button cambiarContrania = findViewById(R.id.btnCambiarContraseniaDesdePerfil);
+        Button back = findViewById(R.id.butRegresarPerfilUsuario);
 
 
         cedulaPerfil.setText(clientEdit.getCedulaClient());
@@ -71,7 +72,12 @@ public class PerfilActivity extends AppCompatActivity {
             }
         });
 
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
     }
     public void editClient(Client c){

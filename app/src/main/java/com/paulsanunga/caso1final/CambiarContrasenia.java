@@ -2,6 +2,7 @@ package com.paulsanunga.caso1final;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,7 +31,8 @@ public class CambiarContrasenia extends AppCompatActivity {
         EditText contraseniaNueva = findViewById(R.id.editTextContresniaNueva);
         EditText contraseniaNuevaRepetida = findViewById(R.id.editTextContraseniaRepetidaNueva);
 
-        Button actualizarContrasenia = findViewById(R.id.btnActulizarContrasenia);
+        Button actualizarContrasenia = findViewById(R.id.btnActulizarContraseniaEdit);
+        Button cambiarContraBack = findViewById(R.id.regresarbtnCambiarContra);
 
         actualizarContrasenia.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +44,10 @@ public class CambiarContrasenia extends AppCompatActivity {
                         if (contraseniaNueva.getText().toString().equals(contraseniaNuevaRepetida.getText().toString())){
                             clientEditContrasenia.setPasswordClient(contraseniaNueva.getText().toString());
                             editClient(clientEditContrasenia);
+                            Intent intent = new Intent(CambiarContrasenia.this,CatalogoVehiculo.class);
+                            startActivity(intent);
                             Toast.makeText(CambiarContrasenia.this, "Se edito Correctamente",Toast.LENGTH_LONG).show();
+                            finish();
                         }else{
                             Toast.makeText(CambiarContrasenia.this, "No coinciden las contraseñas",Toast.LENGTH_LONG).show();
                         }
@@ -52,6 +57,12 @@ public class CambiarContrasenia extends AppCompatActivity {
                     Toast.makeText(CambiarContrasenia.this, "Esa contraseña es incorrecta",Toast.LENGTH_LONG).show();
                 }
 
+            }
+        });
+        cambiarContraBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
 
