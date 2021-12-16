@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Caso1Final"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".SolicitarGarantia"
+            android:exported="false" />
+        <activity
+            android:name=".MisVehiculos"
+            android:exported="false" />
+        <activity
             android:name=".DetalleVehiculo"
             android:exported="false" />
         <activity

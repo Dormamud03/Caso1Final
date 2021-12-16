@@ -23,4 +23,7 @@
     <string name="StrContraseniaNueva">Contraseña Nueva</string>
     <string name="StrContraseniaRepetidaNueva">Repetir Contraseña Nueva</string>
     <string name="catalogo_vehiculos">Catalogo Vehiculos</string>
+    <string name="strFecha">Fecha</string>
+    <string name="StrDescripcon">Descripcion</string>
+    <string name="StrMisVehiculos">Mis Vehiculos</string>
 </resources>
