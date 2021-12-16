@@ -5,20 +5,23 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.paulsanunga.caso1final.CatalogoVehiculo;
 import com.paulsanunga.caso1final.DetalleVehiculo;
+import com.paulsanunga.caso1final.MainActivity;
 import com.paulsanunga.caso1final.Model.CatalogoVehiculos;
 import com.paulsanunga.caso1final.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAdapter.VehiculoViewHolder> {
-
     List<CatalogoVehiculos> listVehiculos;
 
     public ListaVehiculosAdapter(List<CatalogoVehiculos> listVehiculos) {
@@ -40,6 +43,12 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
         //holder.viewColor.setText(listVehiculos.get(position).getCaracteristica().getc);
         holder.viewMotor.setText(listVehiculos.get(position).getCaracteristica().getMotor());
         holder.viewNumeroPuertas.setText(Integer.toString(listVehiculos.get(position).getCaracteristica().getNumero_de_puertas()));
+        Picasso.with(holder.imagenVehiculoCatalogo.getContext())
+                .load(listVehiculos.get(position).getLinks_imagen())
+                .error(R.mipmap.ic_launcher)
+                .fit()
+                .centerInside()
+                .into(holder.imagenVehiculoCatalogo);
 
 
     }
@@ -54,6 +63,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     public class VehiculoViewHolder extends RecyclerView.ViewHolder {
         TextView viewMarca, viewAnioFabri, viewModelo, viewColor, viewMotor, viewNumeroPuertas;
+        ImageView imagenVehiculoCatalogo;
         public VehiculoViewHolder(@NonNull View itemView) {
             super(itemView);
             viewMarca = itemView.findViewById(R.id.txtVehiculoMarca);
@@ -62,6 +72,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
             //viewColor = itemView.findViewById(R.id.txtVehiculoColor);
             viewMotor = itemView.findViewById(R.id.txtVehiculoMotor);
             viewNumeroPuertas = itemView.findViewById(R.id.txtVehiculoNumeroPuertas);
+            imagenVehiculoCatalogo = itemView.findViewById(R.id.imgVehiculo);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -71,6 +82,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
                     intent.putExtra("marca", listVehiculos.get(getAdapterPosition()).getDiseno().getMarca());
                     intent.putExtra("modelo", listVehiculos.get(getAdapterPosition()).getDiseno().getModelo());
                     intent.putExtra("descripcion", listVehiculos.get(getAdapterPosition()).getCaracteristica().toString());
+                    intent.putExtra("imagen", listVehiculos.get(getAdapterPosition()).getLinks_imagen());
                     context.startActivity(intent);
                 }
             });
