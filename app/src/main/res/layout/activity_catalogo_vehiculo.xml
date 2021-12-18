@@ -34,6 +34,14 @@
         android:backgroundTint="@color/design_default_color_error"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <Button
+        android:id="@+id/btnMisVehiculos"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="340dp"
+        android:background="@drawable/client"
+        android:text="Mis" />
+
     <ImageView
         android:id="@+id/imgVehiculo2"
         android:layout_width="match_parent"

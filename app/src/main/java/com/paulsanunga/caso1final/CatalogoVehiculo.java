@@ -27,7 +27,6 @@ import retrofit2.Response;
 
 public class CatalogoVehiculo extends AppCompatActivity {
     CatalogoVehiculosService service;
-    List<CatalogoVehiculos> listArrayCatalogo;
     RecyclerView listVehiculos;
     Context context = this;
 
@@ -37,8 +36,15 @@ public class CatalogoVehiculo extends AppCompatActivity {
         setContentView(R.layout.activity_catalogo_vehiculo);
         listVehiculos = findViewById(R.id.listVehiculos);
         mostrarCatalogoVehiculos();
-        System.out.println("despues "+listArrayCatalogo);
         Button btnPerfil = findViewById(R.id.btnPerfil);
+        Button btnMisVehiculos = findViewById(R.id.btnMisVehiculos);
+        btnMisVehiculos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CatalogoVehiculo.this,MisVehiculos.class);
+                startActivity(intent);
+            }
+        });
         btnPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
