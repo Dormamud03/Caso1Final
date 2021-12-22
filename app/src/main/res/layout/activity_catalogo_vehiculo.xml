@@ -39,8 +39,8 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="340dp"
-        android:background="@drawable/client"
-        android:text="Mis" />
+        android:background="@drawable/auto"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imgVehiculo2"

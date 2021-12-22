@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.paulsanunga.caso1final.Model.Client;
 import com.paulsanunga.caso1final.Utils.Apis;
 import com.paulsanunga.caso1final.Utils.ClientService;
+import com.paulsanunga.caso1final.Utils.Encrypt;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -37,7 +38,7 @@ public class CambiarContrasenia extends AppCompatActivity {
         actualizarContrasenia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clientEditContrasenia.getPasswordClient().equals(contraseniaAntigua.getText().toString())){
+                if (new Encrypt().getAESDecrypt(clientEditContrasenia.getPasswordClient()).equals(contraseniaAntigua.getText().toString())){
                     if (contraseniaNueva.getText().toString().isEmpty() && contraseniaNuevaRepetida.getText().toString().isEmpty()){
                         Toast.makeText(CambiarContrasenia.this, "No ha ingresado ninguna contraseña",Toast.LENGTH_LONG).show();
                     }else {
