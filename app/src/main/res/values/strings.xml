@@ -26,4 +26,5 @@
     <string name="strFecha">Fecha</string>
     <string name="StrDescripcon">Descripcion</string>
     <string name="StrMisVehiculos">Mis Vehiculos</string>
+    <string name="StrProblemas">Descripcion De Inconvenientes</string>
 </resources>

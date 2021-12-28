@@ -3,9 +3,9 @@ package com.paulsanunga.caso1final.Utils;
 
 public class Apis {
 
-    public static final String URL_001 = "http://192.168.1.100:8080/cliente/api/v1/";
-    public static final String URL_002 = "http://192.168.1.100:8080/vehiculo_catalogo/api/v1/";
-    public static final String URL_003 = "http://192.168.1.100:8080/solicitud/garantia/api/v1/";
+    public static final String URL_001 = "url/cliente/api/v1/";
+    public static final String URL_002 = "url/vehiculo_catalogo/api/v1/";
+    public static final String URL_003 = "url/solicitud/garantia/api/v1/";
 
 
 
