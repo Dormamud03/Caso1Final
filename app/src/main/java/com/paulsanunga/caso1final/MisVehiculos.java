@@ -44,13 +44,11 @@ public class MisVehiculos extends AppCompatActivity {
                 if (response.body()!=null){
                     List<VehiculoCliente> list = new ArrayList<VehiculoCliente>();
                     String[] responseDirec;
-                    System.out.println(response.body().get(0)+"Lista el numero");
                     for (int i = 0; i < response.body().size(); i++) {
                         VehiculoCliente vehiculoCliente = new VehiculoCliente();
                         responseDirec = response.body().get(i).split(",");
                         vehiculoCliente.setChasis_vehiculo(responseDirec[0]);
                         vehiculoCliente.setLinks_imagen(responseDirec[1]);
-                        System.out.println(responseDirec[1] +" imagen");
                         vehiculoCliente.setMarca(responseDirec[2]);
                         vehiculoCliente.setModelo(responseDirec[3]);
                         list.add(vehiculoCliente);

@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/perfilimage" />
+        app:srcCompat="@drawable/client" />
 
     <EditText
         android:id="@+id/editTextNombreper"

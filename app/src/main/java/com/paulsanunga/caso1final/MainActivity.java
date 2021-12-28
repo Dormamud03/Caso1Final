@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(Call<Client> call, Throwable t) {
                         Log.e("Error: ",t.getMessage());
-                        Toast.makeText(MainActivity.this, "Este Usuario No se encuentra registrado",Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "La contraseña del usuario esta erronea o este Usuario No se encuentra registrado",Toast.LENGTH_LONG).show();
                     }
                 });
             }
