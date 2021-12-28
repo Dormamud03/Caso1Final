@@ -69,6 +69,7 @@ public class ListVehiculosCliente extends RecyclerView.Adapter<ListVehiculosClie
                 public void onClick(View v) {
                     Context context = v.getContext();
                     Intent intent = new Intent(context, SolicitarGarantia.class);
+                    intent.putExtra("chasis", listMisVehiculos.get(getAdapterPosition()).getChasis_vehiculo());
                     context.startActivity(intent);
                 }
             });

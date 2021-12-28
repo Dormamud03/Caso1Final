@@ -16,6 +16,7 @@ public class Apis {
     public static CatalogoVehiculosService getCatalogoVehiculosService(){
         return Catalogo.getCatalogo(URL_002).create(CatalogoVehiculosService.class);
     }
+
     public static MisVehiculosService getMisVehiculosService(){
         return MisVehiculosUtils.getMisVehiculos(URL_003).create(MisVehiculosService.class);
     }

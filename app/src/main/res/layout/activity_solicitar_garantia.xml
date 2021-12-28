@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".SolicitarGarantia">
 
+    <Button
+        android:id="@+id/regresarbtnGarantia"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
@@ -34,7 +44,7 @@
         app:srcCompat="@drawable/starmotors" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/txtDescripProblemas"
         android:layout_width="match_parent"
         android:layout_height="165dp"
         android:layout_marginStart="20dp"
@@ -50,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/btnSolicitar2"
+        android:id="@+id/btnSolicitarGarantia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -68,5 +78,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripProblemas" />
 </androidx.constraintlayout.widget.ConstraintLayout>
