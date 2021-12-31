@@ -16,9 +16,9 @@ import com.paulsanunga.caso1final.Model.Garantia;
 import com.paulsanunga.caso1final.Utils.Apis;
 import com.paulsanunga.caso1final.Utils.MisVehiculosService;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,29 +26,28 @@ import retrofit2.Response;
 
 public class SolicitarGarantia extends AppCompatActivity {
     MisVehiculosService service;
+    String chasis="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solicitar_garantia);
-        EditText descripcionProblemas = findViewById(R.id.txtDescripProblemas);
+        EditText incon = findViewById(R.id.txtInconvenientes);
         Button btnBack = findViewById(R.id.regresarbtnGarantia);
         Button garantia = findViewById(R.id.btnSolicitarGarantia);
         Bundle bn = getIntent().getExtras();
-        String chasis = bn.getString("chasis");
-        String desPro = descripcionProblemas.getText().toString();
-        String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
-
+        chasis = bn.getString("chasis");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date();
         garantia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (descripcionProblemas.getText().toString().isEmpty()){
+                if (incon.getText().toString().isEmpty()){
                     Toast.makeText(SolicitarGarantia.this, "Es obligatorio describir el problema presentado",Toast.LENGTH_LONG).show();
                 }else{
                     Garantia g = new Garantia();
-                    g.setFk_chasis_vehiculo(chasis);
-                    g.setDescripcion(desPro);
-                    g.setFecha_solicitud(date);
+                    g.setDescripcion(incon.getText().toString());
+                    g.setFecha_solicitud(dateFormat.format(date));
                     addGarantia(g);
                 }
             }
@@ -65,7 +64,7 @@ public class SolicitarGarantia extends AppCompatActivity {
 
     public void addGarantia(Garantia g){
         service = Apis.getMisVehiculosService();
-        Call<Garantia> call = service.postGarantia(g);
+        Call<Garantia> call = service.postGarantia(chasis,g);
         call.enqueue(new Callback<Garantia>() {
             @Override
             public void onResponse(Call<Garantia> call, Response<Garantia> response) {
@@ -75,8 +74,9 @@ public class SolicitarGarantia extends AppCompatActivity {
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(SolicitarGarantia.this,MisVehiculos.class);
-                        startActivity(intent);
+                        /*Intent intent = new Intent(SolicitarGarantia.this,MisVehiculos.class);
+                        startActivity(intent);*/
+                        finish();
                     }
                 });
                 Dialog dialog = builder.create();

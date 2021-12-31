@@ -70,7 +70,7 @@ public class CambiarContrasenia extends AppCompatActivity {
     }
     public void editClient(Client c){
         service = Apis.getClientService();
-        Call<Client> call = service.addClient(c);
+        Call<Client> call = service.changePass(c);
         call.enqueue(new Callback<Client>() {
             @Override
             public void onResponse(Call<Client> call, Response<Client> response) {

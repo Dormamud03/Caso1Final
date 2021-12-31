@@ -79,6 +79,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
                 public void onClick(View v) {
                     Context context = v.getContext();
                     Intent intent = new Intent(context, DetalleVehiculo.class);
+                    intent.putExtra("catalogoId", listVehiculos.get(getAdapterPosition()).getId_vehiculo_catalogo());
                     intent.putExtra("marca", listVehiculos.get(getAdapterPosition()).getDiseno().getMarca());
                     intent.putExtra("modelo", listVehiculos.get(getAdapterPosition()).getDiseno().getModelo());
                     intent.putExtra("descripcion", listVehiculos.get(getAdapterPosition()).getCaracteristica().toString());

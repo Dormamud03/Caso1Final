@@ -17,7 +17,7 @@ public interface MisVehiculosService {
     @GET("cars/{id}")
     Call<List<String>> getVehiculosClient(@Path("id") String id);
 
-    @POST("save")
-    Call<Garantia> postGarantia(@Body Garantia garantia);
+    @POST("save/{id}")
+    Call<Garantia> postGarantia(@Path ("id") String id ,@Body Garantia garantia);
 
 }

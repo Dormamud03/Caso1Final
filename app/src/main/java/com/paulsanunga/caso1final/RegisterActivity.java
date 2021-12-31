@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.paulsanunga.caso1final.Model.Client;
 import com.paulsanunga.caso1final.Utils.Apis;
 import com.paulsanunga.caso1final.Utils.ClientService;
+import com.paulsanunga.caso1final.Utils.Encrypt;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
                                             p.setEmailClient(txtEmail.getText().toString());
                                             p.setCelularClient(txtCelular.getText().toString());
                                             p.setDireccionClient(txtDireccion.getText().toString());
-                                            p.setPasswordClient(txtContrasenia.getText().toString());
+                                            p.setPasswordClient(new Encrypt().getAES(txtContrasenia.getText().toString()));
 
                                             addCliente(p);
                                         }else{

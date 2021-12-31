@@ -19,6 +19,9 @@ public interface ClientService {
     @POST("save")
     Call<Client> addClient(@Body Client client);
 
+    @POST("edit-pass")
+    Call<Client> changePass(@Body Client client);
+
     @GET("login")
     Call<Client> loginClient(@Query("cedulaClient") String cedulaClient, @Query("passwordClient")String passwordClient);
 }
